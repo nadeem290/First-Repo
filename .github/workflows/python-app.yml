@@ -2,6 +2,8 @@ name: Python application (Manual Run)
 
 on:
   workflow_dispatch:  # 👈 Enables manual trigger from GitHub UI
+  pull_request:
+    branches: [ "main" ]
 
 permissions:
   contents: read
